@@ -83,7 +83,19 @@ export const CreateExtension = async (
   try {
     const user = await getCurrentUser();
 
-    // ensure to reset the id's since they are generated on the client
+    // Check if the user is an admin, return unauthorized if not
+    if (!user.isAdmin) {
+      return {
+        status: "UNAUTHORIZED",
+        errors: [
+          {
+            message: "You are not authorized to create extensions.",
+          },
+        ],
+      };
+    }
+
+    // Ensure to reset the id's since they are generated on the client
     inputModel.headers.map((h) => {
       h.id = uniqueId();
     });
