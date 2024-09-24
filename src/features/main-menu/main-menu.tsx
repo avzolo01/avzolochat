@@ -6,7 +6,7 @@ import {
   MenuItemContainer,
   menuIconProps,
 } from "@/ui/menu";
-import { Book, Home, MessageCircle, PocketKnife, VenetianMask } from "lucide-react";
+import { Book, Home, MessageCircle, PocketKnife,Sheet, VenetianMask } from "lucide-react";
 import { getCurrentUser } from "../auth-page/helpers"; // Importing user auth
 import { MenuLink } from "./menu-link";
 import { UserProfile } from "./user-profile";
