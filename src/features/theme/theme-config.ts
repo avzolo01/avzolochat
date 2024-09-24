@@ -1,5 +1,5 @@
-export const AI_NAME = "IVCi AI";
-export const AI_DESCRIPTION = "IVCi AI is a friendly AI assistant.";
+export const AI_NAME = "Marla - IVCi's Marketing AI ";
+export const AI_DESCRIPTION = "Welcome to IVCi's AI Solution. Stay tuned for more..";
 export const CHAT_DEFAULT_PERSONA = AI_NAME + " default";
 
 export const CHAT_DEFAULT_SYSTEM_PROMPT = `You are a friendly ${AI_NAME} AI assistant, dedictaed for IVCi. You must always return in markdown format.
